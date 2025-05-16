@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery Management System</h1>
+
+    <form id="grocery-form">
+      <input type="text" id="item-name" placeholder="Item Name" required>
+      <input type="number" id="item-qty" placeholder="Quantity" required>
+      <input type="number" id="item-price" placeholder="Price per Unit" required>
+      <button type="submit">Add Item</button>
+    </form>
+
+    <h2>Grocery List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="grocery-table-body"></tbody>
+    </table>
+
+    <h3 id="total-cost">Total Cost: ₹0</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
